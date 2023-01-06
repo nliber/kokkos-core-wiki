@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Contributing" href="contributing.html" /><link rel="prev" title="Kokkos Testing Workflow Components" href="testing-and-issue-tracking/Testing-Workflow-Components.html" />
 
     <meta name="generator" content="sphinx-5.0.1, furo 2022.06.04.1"/>
-        <title>Video lectures - Kokkos documentation</title>
+        <title>Video lectures and slides - Kokkos documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -174,8 +174,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="ProgrammingGuide/Atomic-Operations.html">10. Atomic Operations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ProgrammingGuide/Subviews.html">11: Subviews</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ProgrammingGuide/Interoperability.html">12. Interoperability and Legacy Codes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ProgrammingGuide/Kokkos-and-Virtual-Functions.html">13. Kokkos and Virtual Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProgrammingGuide/Compatibility.html">12 Backwards &amp; Future Compatibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProgrammingGuide/Interoperability.html">13. Interoperability and Legacy Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProgrammingGuide/Kokkos-and-Virtual-Functions.html">14. Kokkos and Virtual Functions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
@@ -183,8 +184,8 @@
 <li class="toctree-l1"><a class="reference internal" href="keywords.html">CMake Keywords</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="API/core-index.html">API: Core</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="API/core/Initialize-and-Finalize.html">Initialize and Finalize</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="API/core/initialize_finalize/initialize.html">initialize</a></li>
-<li class="toctree-l3"><a class="reference internal" href="API/core/initialize_finalize/finalize.html">finalize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/initialize_finalize/initialize.html"><code class="docutils literal notranslate"><span class="pre">initialize</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/initialize_finalize/finalize.html"><code class="docutils literal notranslate"><span class="pre">finalize</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/initialize_finalize/ScopeGuard.html">ScopeGuard</a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/initialize_finalize/InitializationSettings.html">InitializationSettings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/initialize_finalize/InitArguments.html">InitArguments</a></li>
@@ -199,6 +200,7 @@
 <li class="toctree-l3"><a class="reference internal" href="API/core/view/realloc.html"><code class="docutils literal notranslate"><span class="pre">realloc</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/view/resize.html"><code class="docutils literal notranslate"><span class="pre">resize</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/view/subview.html"><code class="docutils literal notranslate"><span class="pre">subview</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/view/Subview_type.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::Subview</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/view/view.html"><code class="docutils literal notranslate"><span class="pre">View</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/view/view_alloc.html"><code class="docutils literal notranslate"><span class="pre">view_alloc()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/view/view_like.html">View-like Types</a></li>
@@ -243,13 +245,17 @@
 <li class="toctree-l3"><a class="reference internal" href="API/core/policies/RangePolicy.html"><code class="docutils literal notranslate"><span class="pre">RangePolicy</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/policies/TeamHandleConcept.html"><code class="docutils literal notranslate"><span class="pre">TeamHandleConcept</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/policies/TeamPolicy.html"><code class="docutils literal notranslate"><span class="pre">TeamPolicy</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/policies/TeamThreadMDRange.html"><code class="docutils literal notranslate"><span class="pre">TeamThreadMDRange</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/policies/TeamThreadRange.html"><code class="docutils literal notranslate"><span class="pre">TeamThreadRange</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/policies/TeamVectorMDRange.html"><code class="docutils literal notranslate"><span class="pre">TeamVectorMDRange</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/policies/TeamVectorRange.html"><code class="docutils literal notranslate"><span class="pre">TeamVectorRange</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/policies/ThreadVectorMDRange.html"><code class="docutils literal notranslate"><span class="pre">ThreadVectorMDRange</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/policies/ThreadVectorRange.html"><code class="docutils literal notranslate"><span class="pre">ThreadVectorRange</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="API/core/Spaces.html">Spaces</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="API/core/execution_spaces.html">Execution Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/spaces/partition_space.html">Kokkos::partition_space()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/memory_spaces.html">Memory Spaces</a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/SpaceAccessibility.html">Space Accessibility</a></li>
 </ul>
@@ -286,6 +292,7 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="API/core/Utilities.html">Utilities</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="API/core/utilities/abort.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::abort</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="API/core/utilities/all.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::ALL</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/utilities/complex.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::complex</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/utilities/timer.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::Timer</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="API/core/utilities/experimental.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::Experimental</span></code></a></li>
@@ -312,20 +319,96 @@
 <li class="toctree-l2"><a class="reference internal" href="API/algorithms/Random-Number.html">Random-Number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="API/algorithms/Random-Number.html#generator">Generator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="API/algorithms/Sort.html">Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="API/algorithms/Sort.html#sorting-with-nested-policies-team-and-thread-level">Sorting with nested policies (team- and thread-level)</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="API/algorithms/std-algorithms-index.html">Std Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="API/algorithms/std-algorithms/Iterators.html">Iterators</a></li>
-<li class="toctree-l3"><a class="reference internal" href="API/algorithms/std-algorithms/StdMinMaxElement.html">Minimum/maximum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="API/algorithms/std-algorithms/StdModSeq.html">Modifying Sequence</a></li>
-<li class="toctree-l3"><a class="reference internal" href="API/algorithms/std-algorithms/StdNonModSeq.html">NonModifying Sequence</a></li>
-<li class="toctree-l3"><a class="reference internal" href="API/algorithms/std-algorithms/StdNumeric.html">Numeric</a></li>
-<li class="toctree-l3"><a class="reference internal" href="API/algorithms/std-algorithms/StdPartioningOps.html">Partitioning</a></li>
-<li class="toctree-l3"><a class="reference internal" href="API/algorithms/std-algorithms/StdSorting.html">Sorting</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="API/algorithms/std-algorithms/StdMinMaxElement.html">Minimum/maximum</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdMinElement.html"><code class="docutils literal notranslate"><span class="pre">min_element</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdMaxElement.html"><code class="docutils literal notranslate"><span class="pre">max_element</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdMinMaxElement.html"><code class="docutils literal notranslate"><span class="pre">minmax_element</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="API/algorithms/std-algorithms/StdModSeq.html">Modifying Sequence</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdCopy.html"><code class="docutils literal notranslate"><span class="pre">copy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdCopyIf.html"><code class="docutils literal notranslate"><span class="pre">copy_if</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdCopy_n.html"><code class="docutils literal notranslate"><span class="pre">copy_n</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdCopyBackward.html"><code class="docutils literal notranslate"><span class="pre">copy_backward</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdMove.html"><code class="docutils literal notranslate"><span class="pre">move</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdMoveBackward.html"><code class="docutils literal notranslate"><span class="pre">move_backward</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdFill.html"><code class="docutils literal notranslate"><span class="pre">fill</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdFill_n.html"><code class="docutils literal notranslate"><span class="pre">fill_n</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdTransform.html"><code class="docutils literal notranslate"><span class="pre">transform</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdGenerate.html"><code class="docutils literal notranslate"><span class="pre">generate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdGenerate_n.html"><code class="docutils literal notranslate"><span class="pre">generate_n</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdRemove.html"><code class="docutils literal notranslate"><span class="pre">remove</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdRemoveIf.html"><code class="docutils literal notranslate"><span class="pre">remove_if</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdRemoveCopy.html"><code class="docutils literal notranslate"><span class="pre">remove_copy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdRemoveCopyIf.html"><code class="docutils literal notranslate"><span class="pre">remove_copy_if</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdReplace.html"><code class="docutils literal notranslate"><span class="pre">replace</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdReplaceIf.html"><code class="docutils literal notranslate"><span class="pre">replace_if</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdReplaceCopy.html"><code class="docutils literal notranslate"><span class="pre">replace_copy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdReplaceCopyIf.html"><code class="docutils literal notranslate"><span class="pre">replace_copy_if</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdSwapRanges.html"><code class="docutils literal notranslate"><span class="pre">swap_ranges</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdReverse.html"><code class="docutils literal notranslate"><span class="pre">reverse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdReverseCopy.html"><code class="docutils literal notranslate"><span class="pre">reverse_copy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdRotate.html"><code class="docutils literal notranslate"><span class="pre">rotate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdRotateCopy.html"><code class="docutils literal notranslate"><span class="pre">rotate_copy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdShiftLeft.html"><code class="docutils literal notranslate"><span class="pre">shift_left</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdShiftRight.html"><code class="docutils literal notranslate"><span class="pre">shift_right</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdUnique.html"><code class="docutils literal notranslate"><span class="pre">unique</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdUniqueCopy.html"><code class="docutils literal notranslate"><span class="pre">unique_copy</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="API/algorithms/std-algorithms/StdNonModSeq.html">Non-modifying Sequence</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdAdjacentFind.html"><code class="docutils literal notranslate"><span class="pre">adjacent_find</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdCount.html"><code class="docutils literal notranslate"><span class="pre">count</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdCountIf.html"><code class="docutils literal notranslate"><span class="pre">count_if</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdEqual.html"><code class="docutils literal notranslate"><span class="pre">equal</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdAllOf.html"><code class="docutils literal notranslate"><span class="pre">all_of</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdAnyOf.html"><code class="docutils literal notranslate"><span class="pre">any_of</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdNoneOf.html"><code class="docutils literal notranslate"><span class="pre">none_of</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdFind.html"><code class="docutils literal notranslate"><span class="pre">find</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdFindIf.html"><code class="docutils literal notranslate"><span class="pre">find_if</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdFindIfNot.html"><code class="docutils literal notranslate"><span class="pre">find_if_not</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdFindEnd.html"><code class="docutils literal notranslate"><span class="pre">find_end</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdFindFirstOf.html"><code class="docutils literal notranslate"><span class="pre">find_first_of</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdForEach.html"><code class="docutils literal notranslate"><span class="pre">for_each</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdForEachN.html"><code class="docutils literal notranslate"><span class="pre">for_each_n</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdLexicographicalCompare.html"><code class="docutils literal notranslate"><span class="pre">lexicographical_compare</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdMismatch.html"><code class="docutils literal notranslate"><span class="pre">mismatch</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdSearch.html"><code class="docutils literal notranslate"><span class="pre">search</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdSearchN.html"><code class="docutils literal notranslate"><span class="pre">search_n</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="API/algorithms/std-algorithms/StdNumeric.html">Numeric</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdAdjacentDifference.html"><code class="docutils literal notranslate"><span class="pre">adjacent_difference</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdReduce.html"><code class="docutils literal notranslate"><span class="pre">reduce</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdExclusiveScan.html"><code class="docutils literal notranslate"><span class="pre">exclusive_scan</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdInclusiveScan.html"><code class="docutils literal notranslate"><span class="pre">inclusive_scan</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdTransformReduce.html"><code class="docutils literal notranslate"><span class="pre">transform_reduce</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdTransformExclusiveScan.html"><code class="docutils literal notranslate"><span class="pre">transform_exclusive_scan</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdTransformInclusiveScan.html"><code class="docutils literal notranslate"><span class="pre">transform_inclusive_scan</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="API/algorithms/std-algorithms/StdPartioningOps.html">Partitioning</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdIsPartitioned.html"><code class="docutils literal notranslate"><span class="pre">is_partitioned</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdPartitionPoint.html"><code class="docutils literal notranslate"><span class="pre">partition_point</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdPartitionCopy.html"><code class="docutils literal notranslate"><span class="pre">partition_copy</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="API/algorithms/std-algorithms/StdSorting.html">Sorting</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdIsSorted.html"><code class="docutils literal notranslate"><span class="pre">is_sorted</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="API/algorithms/std-algorithms/all/StdIsSortedUntil.html"><code class="docutils literal notranslate"><span class="pre">is_sorted_until</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="API/alphabetical.html">API in Alphabetical Order</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="usecases.html">Use Cases and Examples</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1"><a class="reference internal" href="DeprecationPage.html">Deprecation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="known-issues.html">Known issues</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="usecases.html">Use Cases and Examples</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="usecases/MPI-Halo-Exchange.html">MPI Halo Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usecases/Average-To-Nodes.html">ScatterView averaging elements to nodes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usecases/MDRangePolicy.html">MDRangePolicy Use Case</a></li>
@@ -335,9 +418,11 @@
 <li class="toctree-l2"><a class="reference internal" href="usecases/Tasking.html">Kokkos Tasking Use Case</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usecases/Kokkos-Fortran-Interoperability.html">Fortran Interop Use Case</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usecases/SoA-and-AoSoA-with-Cabana.html">Array of Structures and Structure of Arrays with Cabana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usecases/WindowsHeader.html">Kokkos and <code class="docutils literal notranslate"><span class="pre">Windows.h</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="usecases/Moving_from_EnableUVM_to_SharedSpace.html">Moving code from requiring <code class="docutils literal notranslate"><span class="pre">Kokkos_ENABLE_CUDA_UVM</span></code> to using <code class="docutils literal notranslate"><span class="pre">SharedSpace</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="testing-and-issue-tracking.html">Testing and Issue Tracking</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="testing-and-issue-tracking.html">Testing and Issue Tracking</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="testing-and-issue-tracking/Requirements-Issues-and-Feedback.html">Requirements, Issues and Feedback</a></li>
 <li class="toctree-l2"><a class="reference internal" href="testing-and-issue-tracking/Testing-Process-Details.html">Attachments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="testing-and-issue-tracking/Testing-Processes.html">Kokkos Testing Processes and Change Process</a></li>
@@ -345,7 +430,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials">Tutorials</a></li>
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Video lectures</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Video lectures and slides</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM">1. Intro, Build, Parallel dispatch</a></li>
 <li class="toctree-l2"><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4">2. Views and Spaces</a></li>
 <li class="toctree-l2"><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY">3. Multidim loops and Data Structures</a></li>
@@ -404,19 +489,230 @@
           </label>
         </div>
         <article role="main">
-          <section id="video-lectures">
-<h1>Video lectures<a class="headerlink" href="#video-lectures" title="Permalink to this heading">#</a></h1>
+          <section id="video-lectures-and-slides">
+<h1>Video lectures and slides<a class="headerlink" href="#video-lectures-and-slides" title="Permalink to this heading">#</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 80%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>Video lectures</p></th>
+<th class="head"><p>Slides</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM">Intro, Build, Parallel dispatch</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_01_Introduction.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>1.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM&amp;feature=youtu.be&amp;t=698">Introduction</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>1.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM&amp;feature=youtu.be&amp;t=2481">Concepts for Data Parallelism</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>1.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM&amp;feature=youtu.be&amp;t=3000">Data parallel patterns</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>1.4.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM&amp;feature=youtu.be&amp;t=4986">Building Applications with Kokkos</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4">Views and Spaces</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_02_ViewsAndSpaces.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td><p>2.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4&amp;feature=youtu.be&amp;t=1413">Views</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4&amp;feature=youtu.be&amp;t=2390">Execution and Memory Spaces</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>2.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4&amp;feature=youtu.be&amp;t=4336">Managing memory access patterns for performance portability</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2.4.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4&amp;feature=youtu.be&amp;t=5592">Advanced Reductions</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY">Multidim loops and Data Structures</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_03_MDRangeMoreViews.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>3.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY&amp;feature=youtu.be&amp;t=1319">Tightly Nested Loops with MDRangePolicy</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY&amp;feature=youtu.be&amp;t=2185">Subviews: Taking slices of Views</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>3.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY&amp;feature=youtu.be&amp;t=3189">Unmanaged Views: Dealing with external memory</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3.4.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY&amp;feature=youtu.be&amp;t=3901">Thread safety and atomic operations</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>3.5.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY&amp;t=4884s">ScatterView</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3.6.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY&amp;feature=youtu.be&amp;t=5465">DualView</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=s9ecpeWRePs">Hierarchical Parallelism</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_04_HierarchicalParallelism.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td><p>4.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=s9ecpeWRePs&amp;feature=youtu.be&amp;t=2036">Hierarchical parallelism</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>4.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=s9ecpeWRePs&amp;feature=youtu.be&amp;t=4333">Scratch memory</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>4.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=s9ecpeWRePs&amp;feature=youtu.be&amp;t=5615">Unique Token</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="5">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=xEAyOod57-c">SIMD, Streams, Tasking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_05_SIMDStreamsTasking.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td><p>5.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=xEAyOod57-c&amp;feature=youtu.be&amp;t=1510">SIMD</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>5.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=xEAyOod57-c&amp;feature=youtu.be&amp;t=2949">Asynchronicity and Streams</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>5.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=xEAyOod57-c&amp;feature=youtu.be&amp;t=4541">Task parallelism</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=1J3JQ3d3cRc&amp;t=1s">Fortran/Python interop, MPI, PGAS</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_06_FortranPythonMPIAndPGAS.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td><p>6.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=1J3JQ3d3cRc&amp;feature=youtu.be&amp;t=1298">Fortran InterOp</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>6.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=1J3JQ3d3cRc&amp;feature=youtu.be&amp;t=2115">Python InterOp</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>6.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=1J3JQ3d3cRc&amp;feature=youtu.be&amp;t=2732">MPI - Kokkos Interoperability</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>6.4.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=1J3JQ3d3cRc&amp;feature=youtu.be&amp;t=5050">Kokkos Remote Spaces: Support for PGAS in Kokkos</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=MH6zFYGw0HU">Kokkos Tools</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_07_Tools.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>7.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=MH6zFYGw0HU&amp;feature=youtu.be&amp;t=1275">Kokkos Tools</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>7.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=MH6zFYGw0HU&amp;feature=youtu.be&amp;t=2996">Vendor and Independent Profiling GUIs</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>7.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=MH6zFYGw0HU&amp;feature=youtu.be&amp;t=3705">Tuning</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>7.4.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=MH6zFYGw0HU&amp;feature=youtu.be&amp;t=4960">Custom Tools</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>7.5.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=MH6zFYGw0HU&amp;feature=youtu.be&amp;t=5697">Clang Based Static Analysis</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;t=1s">Kokkos Kernels Math Library</a></p></td>
+<td><p><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials/blob/main/LectureSeries/KokkosTutorial_08_KokkosKernels.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>8.1.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=1166">Kokkos Kernels: Library Based Approach for Performance Portable Sparse/Dense linear algebra and Graph Kernels</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>8.2.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=2045">BLAS and LAPACK</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>8.3.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=2601">Batched BLAS and LAPACK</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>8.4.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=3490">Sparse Linear Algebra</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>8.5.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=4387">Graph Kernels</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>8.6.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=4963">Sparse Solvers</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>8.7.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=5444">Sparse Solvers 2</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>8.8.</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;feature=youtu.be&amp;t=6237">Building Applications with Kokkos Kernels</a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM">1. Intro, Build, Parallel dispatch</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4">2. Views and Spaces</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY">3. Multidim loops and Data Structures</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=s9ecpeWRePs">4. Hierarchical Parallelism</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=xEAyOod57-c">5. SIMD, Streams, Tasking</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=1J3JQ3d3cRc&amp;t=1s">6. Fortran/Python interop, MPI, PGAS</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=MH6zFYGw0HU">7. Kokkos Tools</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=_qD4X66MQF8&amp;t=1s">8. Kokkos Kernels Math Library</a></li>
-</ul>
 </div>
 </section>
 
