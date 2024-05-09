@@ -41,23 +41,45 @@ Synopsis
         RangePolicy(const RangePolicy&) = default;
         RangePolicy(RangePolicy&&) = default;
 
-        inline RangePolicy();
+        RangePolicy();
 
+        // Until 4.3
         template<class ... Args>
-        inline RangePolicy( const execution_space & work_space
-                          , const member_type work_begin
-                          , const member_type work_end
-                          , Args ... args);
+        RangePolicy( const execution_space & work_space
+                   , member_type work_begin
+                   , member_type work_end
+                   , Args ... args );
 
+        // Since 4.3
+        RangePolicy( const execution_space & work_space
+                   , member_type work_begin
+                   , member_type work_end );
+
+        // Since 4.3
+        RangePolicy( const execution_space & work_space
+                   , member_type work_begin
+                   , member_type work_end
+                   , ChunkSize chunk_size );
+
+        // Until 4.3
         template<class ... Args>
-        inline RangePolicy( const member_type work_begin
-                          , const member_type work_end
-                          , Args ... args);
+        RangePolicy( member_type work_begin
+                   , member_type work_end
+                   , Args ... args );
+
+        // Since 4.3
+        RangePolicy( member_type work_begin
+                   , member_type work_end );
+
+        // Since 4.3
+        RangePolicy( member_type work_begin
+                   , member_type work_end
+                   , ChunkSize chunk_size );
 
         // retrieve chunk_size
-        inline member_type chunk_size() const;
+        member_type chunk_size() const;
         // set chunk_size to a discrete value
-        inline RangePolicy set_chunk_size(int chunk_size_);
+        RangePolicy& set_chunk_size(int chunk_size_);
 
         // return ExecSpace instance provided to the constructor
         KOKKOS_INLINE_FUNCTION const execution_space & space() const;
@@ -101,17 +123,38 @@ Constructors
 
    Default Constructor uninitialized policy.
 
+   // Since 4.3
+.. cppkokkos:function:: RangePolicy(int64_t begin, int64_t end)
+
+   Provide a start and end index.
+
+   // Since 4.3
+.. cppkokkos:function:: RangePolicy(int64_t begin, int64_t end, ChunkSize chunk_size)
+
+   Provide a start and end index as well as a ChunkSize (see below).
+
+   // Since 4.3
+.. cppkokkos:function:: RangePolicy(const ExecutionSpace& space, int64_t begin, int64_t end)
+
+   Provide a start and end index and an ``ExecutionSpace`` instance to use as the execution resource.
+
+   // Since 4.3
+.. cppkokkos:function:: RangePolicy(const ExecutionSpace& space, int64_t begin, int64_t end, ChunkSize chunk_size)
+
+   Provide a start and end index, an ``ExecutionSpace`` instance to use as the execution resource and a ChunkSize (see below).
+
+   // Until 4.3
 .. cppkokkos:function:: template<class ... InitArgs> RangePolicy(const int64_t& begin, const int64_t& end, const InitArgs ... init_args)
 
    Provide a start and end index as well as optional arguments to control certain behavior (see below).
 
+   // Until 4.3
 .. cppkokkos:function:: template<class ... InitArgs> RangePolicy(const ExecutionSpace& space, const int64_t& begin, const int64_t& end, const InitArgs ... init_args)
 
    Provide a start and end index and an ``ExecutionSpace`` instance to use as the execution resource, as well as optional arguments to control certain behavior (see below).
 
-Optional ``InitArgs``:
-^^^^^^^^^^^^^^^^^^^^^^
-
+ChunkSize
+* Optional ``InitArgs`` (until 4.3)
 * ``ChunkSize`` : Provide a hint for optimal chunk-size to be used during scheduling. For the SYCL backend, the workgroup size used in a ``parallel_for`` kernel can be set via this variable.
 
 Preconditions:
