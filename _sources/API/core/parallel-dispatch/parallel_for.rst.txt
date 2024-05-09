@@ -1,5 +1,5 @@
-``parallel_for()``
-==================
+``parallel_for``
+================
 
 .. role::cpp(code)
     :language: cpp
@@ -74,7 +74,7 @@ More Detailed Examples are provided in the ExecutionPolicy documentation.
 
         int N = atoi(argv[1]);
 
-        Kokkos::parallel_for("Loop1", N, KOKKOS_LAMBDA (const int& i) {
+        Kokkos::parallel_for("Loop1", N, KOKKOS_LAMBDA (const int i) {
             printf("Greeting from iteration %i\n",i);
         });
 

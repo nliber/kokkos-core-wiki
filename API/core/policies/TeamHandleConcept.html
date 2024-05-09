@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/hacks.css" />
     
@@ -157,6 +158,7 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../quick_start.html">Quick Start</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../programmingguide.html">Programming Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../ProgrammingGuide/Introduction.html">1. Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../ProgrammingGuide/Machine-Model.html">2. Machine Model</a></li>
@@ -177,6 +179,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../ProgrammingGuide/Compatibility.html">12 Backwards &amp; Future Compatibility</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../ProgrammingGuide/Interoperability.html">13. Interoperability and Legacy Codes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../ProgrammingGuide/Kokkos-and-Virtual-Functions.html">14. Kokkos and Virtual Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ProgrammingGuide/SIMD.html">15. SIMD Types</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../requirements.html">Requirements</a></li>
@@ -186,14 +189,15 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Initialize-and-Finalize.html">Initialize and Finalize</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/initialize.html"><code class="docutils literal notranslate"><span class="pre">initialize</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/finalize.html"><code class="docutils literal notranslate"><span class="pre">finalize</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/ScopeGuard.html">ScopeGuard</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/InitializationSettings.html">InitializationSettings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/ScopeGuard.html"><code class="docutils literal notranslate"><span class="pre">ScopeGuard</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/InitializationSettings.html"><code class="docutils literal notranslate"><span class="pre">InitializationSettings</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/InitArguments.html">InitArguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../initialize_finalize/push_finalize_hook.html"><code class="docutils literal notranslate"><span class="pre">push_finalize_hook</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../View.html">View and related</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../view/create_mirror.html"><code class="docutils literal notranslate"><span class="pre">create_mirror[_view]</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../view/deep_copy.html"><code class="docutils literal notranslate"><span class="pre">deep_copy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../view/deep_copy.html"><code class="docutils literal notranslate"><span class="pre">deep_copy</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../view/layoutLeft.html"><code class="docutils literal notranslate"><span class="pre">LayoutLeft</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../view/layoutRight.html"><code class="docutils literal notranslate"><span class="pre">LayoutRight</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../view/layoutStride.html"><code class="docutils literal notranslate"><span class="pre">LayoutStride</span></code></a></li>
@@ -202,18 +206,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../view/subview.html"><code class="docutils literal notranslate"><span class="pre">subview</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../view/Subview_type.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::Subview</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../view/view.html"><code class="docutils literal notranslate"><span class="pre">View</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../view/view_alloc.html"><code class="docutils literal notranslate"><span class="pre">view_alloc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../view/view_alloc.html"><code class="docutils literal notranslate"><span class="pre">view_alloc</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../view/view_like.html">View-like Types</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../ParallelDispatch.html">Parallel Execution/Dispatch</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/parallel_for.html"><code class="docutils literal notranslate"><span class="pre">parallel_for()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/parallel_reduce.html"><code class="docutils literal notranslate"><span class="pre">parallel_reduce()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/parallel_scan.html"><code class="docutils literal notranslate"><span class="pre">parallel_scan()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/fence.html"><code class="docutils literal notranslate"><span class="pre">fence()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/ParallelForTag.html"><code class="docutils literal notranslate"><span class="pre">ParallelForTag()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/ParallelReduceTag.html"><code class="docutils literal notranslate"><span class="pre">ParallelReduceTag()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/ParallelScanTag.html"><code class="docutils literal notranslate"><span class="pre">ParallelScanTag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/parallel_for.html"><code class="docutils literal notranslate"><span class="pre">parallel_for</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/parallel_reduce.html"><code class="docutils literal notranslate"><span class="pre">parallel_reduce</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/parallel_scan.html"><code class="docutils literal notranslate"><span class="pre">parallel_scan</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/fence.html"><code class="docutils literal notranslate"><span class="pre">fence</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/ParallelForTag.html"><code class="docutils literal notranslate"><span class="pre">ParallelForTag</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/ParallelReduceTag.html"><code class="docutils literal notranslate"><span class="pre">ParallelReduceTag</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parallel-dispatch/ParallelScanTag.html"><code class="docutils literal notranslate"><span class="pre">ParallelScanTag</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../builtin_reducers.html">Built-in Reducers</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -255,7 +259,7 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Spaces.html">Spaces</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../execution_spaces.html">Execution Spaces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../spaces/partition_space.html">Kokkos::partition_space()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../spaces/partition_space.html"><code class="docutils literal notranslate"><span class="pre">partition_space</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../memory_spaces.html">Memory Spaces</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../SpaceAccessibility.html">Space Accessibility</a></li>
 </ul>
@@ -276,6 +280,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../numerics/mathematical-constants.html">Mathematical constants</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../numerics/mathematical-functions.html">Common math functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../numerics/numeric-traits.html">Numeric traits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../numerics/bit-manipulation.html">Bit manipulation</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../c_style_memory_management.html">C-style memory management</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -293,16 +298,28 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Utilities.html">Utilities</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../utilities/abort.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::abort</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utilities/all.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::ALL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utilities/assert.html"><code class="docutils literal notranslate"><span class="pre">KOKKOS_ASSERT</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utilities/complex.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::complex</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utilities/min_max_clamp.html">Minimum/maximum operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utilities/printf.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::printf</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utilities/swap.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::kokkos_swap</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utilities/timer.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::Timer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utilities/device_id.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::device_id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utilities/num_devices.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::num_devices</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utilities/num_threads.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::num_threads</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utilities/experimental.html"><code class="docutils literal notranslate"><span class="pre">Kokkos::Experimental</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Detection-Idiom.html">Detection Idiom</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Macros.html">Macros</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Profiling.html">Profiling</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../profiling/scoped_region.html"><code class="docutils literal notranslate"><span class="pre">Profiling::ScopedRegion</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../profiling/profiling_section.html"><code class="docutils literal notranslate"><span class="pre">Profiling::ProfilingSection</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../containers-index.html">API: Containers</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../containers-index.html">API: Containers</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../containers/Bitset.html"><code class="docutils literal notranslate"><span class="pre">Bitset</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../containers/Bitset.html#constbitset"><code class="docutils literal notranslate"><span class="pre">ConstBitset</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../containers/DualView.html"><code class="docutils literal notranslate"><span class="pre">DualView</span></code></a></li>
@@ -312,23 +329,23 @@
 <li class="toctree-l2"><a class="reference internal" href="../../containers/ScatterView.html"><code class="docutils literal notranslate"><span class="pre">ScatterView</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../containers/StaticCrsGraph.html"><code class="docutils literal notranslate"><span class="pre">StaticCrsGraph</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../containers/Unordered-Map.html"><code class="docutils literal notranslate"><span class="pre">UnorderedMap</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../containers/vector.html"><code class="docutils literal notranslate"><span class="pre">vector</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../containers/vector.html"><code class="docutils literal notranslate"><span class="pre">vector</span></code> [DEPRECATED]</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../algorithms-index.html">API: Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../algorithms-index.html">API: Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../algorithms/Random-Number.html">Random-Number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../algorithms/Random-Number.html#generator">Generator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../algorithms/Sort.html">Sort</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../algorithms/Sort.html#sorting-with-nested-policies-team-and-thread-level">Sorting with nested policies (team- and thread-level)</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../algorithms/std-algorithms-index.html">Std Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../algorithms/std-algorithms-index.html">Std Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../algorithms/std-algorithms/Iterators.html">Iterators</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdMinMaxElement.html">Minimum/maximum</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdMinMaxElement.html">Minimum/maximum</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdMinElement.html"><code class="docutils literal notranslate"><span class="pre">min_element</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdMaxElement.html"><code class="docutils literal notranslate"><span class="pre">max_element</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdMinMaxElement.html"><code class="docutils literal notranslate"><span class="pre">minmax_element</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdModSeq.html">Modifying Sequence</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdModSeq.html">Modifying Sequence</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdCopy.html"><code class="docutils literal notranslate"><span class="pre">copy</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdCopyIf.html"><code class="docutils literal notranslate"><span class="pre">copy_if</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdCopy_n.html"><code class="docutils literal notranslate"><span class="pre">copy_n</span></code></a></li>
@@ -359,7 +376,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdUniqueCopy.html"><code class="docutils literal notranslate"><span class="pre">unique_copy</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdNonModSeq.html">Non-modifying Sequence</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdNonModSeq.html">Non-modifying Sequence</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdAdjacentFind.html"><code class="docutils literal notranslate"><span class="pre">adjacent_find</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdCount.html"><code class="docutils literal notranslate"><span class="pre">count</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdCountIf.html"><code class="docutils literal notranslate"><span class="pre">count_if</span></code></a></li>
@@ -380,7 +397,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdSearchN.html"><code class="docutils literal notranslate"><span class="pre">search_n</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdNumeric.html">Numeric</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdNumeric.html">Numeric</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdAdjacentDifference.html"><code class="docutils literal notranslate"><span class="pre">adjacent_difference</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdReduce.html"><code class="docutils literal notranslate"><span class="pre">reduce</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdExclusiveScan.html"><code class="docutils literal notranslate"><span class="pre">exclusive_scan</span></code></a></li>
@@ -390,13 +407,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdTransformInclusiveScan.html"><code class="docutils literal notranslate"><span class="pre">transform_inclusive_scan</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdPartioningOps.html">Partitioning</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdPartioningOps.html">Partitioning</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdIsPartitioned.html"><code class="docutils literal notranslate"><span class="pre">is_partitioned</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdPartitionPoint.html"><code class="docutils literal notranslate"><span class="pre">partition_point</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdPartitionCopy.html"><code class="docutils literal notranslate"><span class="pre">partition_copy</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdSorting.html">Sorting</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithms/std-algorithms/StdSorting.html">Sorting</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdIsSorted.html"><code class="docutils literal notranslate"><span class="pre">is_sorted</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithms/std-algorithms/all/StdIsSortedUntil.html"><code class="docutils literal notranslate"><span class="pre">is_sorted_until</span></code></a></li>
 </ul>
@@ -405,10 +422,16 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../simd-index.html">API: SIMD</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../simd/simd.html"><code class="docutils literal notranslate"><span class="pre">Experimental::simd</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../simd/simd_mask.html"><code class="docutils literal notranslate"><span class="pre">Experimental::simd_mask</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../simd/where_expression.html"><code class="docutils literal notranslate"><span class="pre">Experimental::where_expression</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../alphabetical.html">API in Alphabetical Order</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../DeprecationPage.html">Deprecation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../deprecation_page.html">Deprecation for Kokkos-3.x</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../known-issues.html">Known issues</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../usecases.html">Use Cases and Examples</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../usecases.html">Use Cases and Examples</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../usecases/MPI-Halo-Exchange.html">MPI Halo Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../usecases/Average-To-Nodes.html">ScatterView averaging elements to nodes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../usecases/MDRangePolicy.html">MDRangePolicy Use Case</a></li>
@@ -422,7 +445,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../usecases/Moving_from_EnableUVM_to_SharedSpace.html">Moving code from requiring <code class="docutils literal notranslate"><span class="pre">Kokkos_ENABLE_CUDA_UVM</span></code> to using <code class="docutils literal notranslate"><span class="pre">SharedSpace</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../testing-and-issue-tracking.html">Testing and Issue Tracking</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../testing-and-issue-tracking.html">Kokkos Planning and Testing</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../testing-and-issue-tracking/Kokkos-Project-Planning.html">Kokkos Project Planning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../testing-and-issue-tracking/Requirements-Issues-and-Feedback.html">Requirements, Issues and Feedback</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../testing-and-issue-tracking/Testing-Process-Details.html">Attachments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../testing-and-issue-tracking/Testing-Processes.html">Kokkos Testing Processes and Change Process</a></li>
@@ -430,7 +454,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/kokkos/kokkos-tutorials">Tutorials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../videolectures.html">Video lectures and slides</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../videolectures.html">Video lectures and slides</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference external" href="https://www.youtube.com/watch?v=rUIcWtFU5qM">1. Intro, Build, Parallel dispatch</a></li>
 <li class="toctree-l2"><a class="reference external" href="https://www.youtube.com/watch?v=O-asHTtO7O4">2. Views and Spaces</a></li>
 <li class="toctree-l2"><a class="reference external" href="https://www.youtube.com/watch?v=nGyJS8u-6GY">3. Multidim loops and Data Structures</a></li>
@@ -442,7 +466,18 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/kokkos/kokkos">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../templates/index.html">Documentation Templates</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../templates/class_api.html">Class API Template</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../developer-guides/index.html">Developer Guides</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../developer-guides/prs-and-reviews.html">PRs and Reviews</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../citation.html">Citing Kokkos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license.html">License</a></li>
 </ul>
@@ -465,7 +500,7 @@
         </a>
         <div class="content-icon-container">
 <div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/kokkos/kokkos-core-wiki/blob/main/docs/source/API/core/policies/TeamHandleConcept.md" title="Edit this page">
+  <a class="muted-link" href="https://github.com/kokkos/kokkos-core-wiki/blob/main/docs/source/API/core/policies/TeamHandleConcept.rst" title="Edit this page">
     <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
@@ -489,244 +524,201 @@
           </label>
         </div>
         <article role="main">
-          <section class="tex2jax_ignore mathjax_ignore" id="teamhandleconcept">
+          <section id="teamhandleconcept">
 <h1><code class="docutils literal notranslate"><span class="pre">TeamHandleConcept</span></code><a class="headerlink" href="#teamhandleconcept" title="Permalink to this heading">#</a></h1>
-<p>Header File: <code class="docutils literal notranslate"><span class="pre">Kokkos_Core.hpp</span></code></p>
+<p>Header File: <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_Core.hpp&gt;</span></code></p>
 <p>TeamHandleConcept defines the concept for the <code class="docutils literal notranslate"><span class="pre">member_type</span></code> of <code class="docutils literal notranslate"><span class="pre">TeamPolicy</span></code> and <code class="docutils literal notranslate"><span class="pre">TeamTask</span></code>.
-The actual type is defined through the policies, but meets the following API requirements.
+The actual type is defined through the policies, but meets the following API.
 Note that the specific classes are only part of the public API as provided by <code class="docutils literal notranslate"><span class="pre">TeamPolicy</span></code> and
 <code class="docutils literal notranslate"><span class="pre">TeamTask</span></code> and only their parts as defined by the <code class="docutils literal notranslate"><span class="pre">TeamHandleConcept</span></code>.
 The actual name of the class, as well as potential template parameters, existing
 constructors, member functions going beyond the concept, etc., are NOT part of the public Kokkos API
 and are thus subject to change.</p>
-<section id="synopsis">
-<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this heading">#</a></h2>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">TeamHandleConcept</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span>
-<span class="w">    </span><span class="c1">// Nested aliases</span>
-<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">execution_space</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="cm">/*see details in the description below*/</span><span class="p">;</span>
-<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">scratch_memory_space</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="cm">/*see details in the description below*/</span><span class="p">;</span>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">#</a></h2>
+<dl class="cppkokkos class">
+<dt class="sig sig-object cppkokkos" id="_CPPv417TeamHandleConcept">
+<span id="_CPPv317TeamHandleConcept"></span><span id="_CPPv217TeamHandleConcept"></span><span id="TeamHandleConcept"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TeamHandleConcept</span></span></span><a class="headerlink" href="#_CPPv417TeamHandleConcept" title="Permalink to this definition">#</a><br /></dt>
+<dd><p class="rubric">Public nested aliases</p>
+<dl class="cppkokkos type">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConcept15execution_spaceE">
+<span id="_CPPv3N17TeamHandleConcept15execution_spaceE"></span><span id="_CPPv2N17TeamHandleConcept15execution_spaceE"></span><span id="TeamHandleConcept::execution_space"></span><span class="k"></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">execution_space</span></span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConcept15execution_spaceE" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Specifies the <a class="reference external" href="https://kokkos.github.io/kokkos-core-wiki/API/core/execution_spaces.html">execution space</a> associated to the team</p>
+</dd></dl>
 
-<span class="w">    </span><span class="c1">// Constructor, Destructor, Assignment</span>
-<span class="w">    </span><span class="n">TeamHandleConcept</span><span class="p">(</span><span class="w"> </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">;</span>
-<span class="w">    </span><span class="n">TeamHandleConcept</span><span class="p">(</span><span class="w"> </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">;</span>
-<span class="w">    </span><span class="o">~</span><span class="n">TeamHandleConcept</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">;</span>
-<span class="w">    </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">;</span>
-<span class="w">    </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">;</span>
+<dl class="cppkokkos type">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConcept20scratch_memory_spaceE">
+<span id="_CPPv3N17TeamHandleConcept20scratch_memory_spaceE"></span><span id="_CPPv2N17TeamHandleConcept20scratch_memory_spaceE"></span><span id="TeamHandleConcept::scratch_memory_space"></span><span class="k"></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">scratch_memory_space</span></span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConcept20scratch_memory_spaceE" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>The scratch memory space associated to this team’s execution space</p>
+</dd></dl>
 
-<span class="w">    </span><span class="c1">// Indices</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">team_rank</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">team_size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">league_rank</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">league_size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+<p class="rubric">Constructors</p>
+<dl class="cppkokkos function">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConcept17TeamHandleConceptEv">
+<span id="_CPPv3N17TeamHandleConcept17TeamHandleConceptEv"></span><span id="_CPPv2N17TeamHandleConcept17TeamHandleConceptEv"></span><span id="TeamHandleConcept::TeamHandleConcept"></span><span class="sig-name descname"><span class="n"><span class="pre">TeamHandleConcept</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConcept17TeamHandleConceptEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Default constructor.</p>
+</dd></dl>
 
-<span class="w">    </span><span class="c1">// Scratch Space</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">scratch_memory_space</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">team_shmem</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">scratch_memory_space</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">team_scratch</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">level</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">scratch_memory_space</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">thread_scratch</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">level</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<dl class="cppkokkos function">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConcept17TeamHandleConceptERR17TeamHandleConcept">
+<span id="_CPPv3N17TeamHandleConcept17TeamHandleConceptERR17TeamHandleConcept"></span><span id="_CPPv2N17TeamHandleConcept17TeamHandleConceptERR17TeamHandleConcept"></span><span id="TeamHandleConcept::TeamHandleConcept__TeamHandleConceptRR"></span><span class="sig-name descname"><span class="n"><span class="pre">TeamHandleConcept</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N17TeamHandleConcept17TeamHandleConceptERR17TeamHandleConcept" title="TeamHandleConcept::TeamHandleConcept"><span class="n"><span class="pre">TeamHandleConcept</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConcept17TeamHandleConceptERR17TeamHandleConcept" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Move constructor.</p>
+</dd></dl>
 
-<span class="w">    </span><span class="c1">// Team collectives</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span><span class="w"> </span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">team_barrier</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">team_broadcast</span><span class="p">(</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">source_team_rank</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Closure</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">team_broadcast</span><span class="p">(</span><span class="w"> </span><span class="n">Closure</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">source_team_rank</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">ReducerType</span><span class="w"> </span><span class="o">&gt;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">team_reduce</span><span class="p">(</span><span class="w"> </span><span class="n">ReducerType</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">reducer</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="w"> </span><span class="o">&gt;</span>
-<span class="w">    </span><span class="n">KOKKOS_INLINE_FUNCTION</span>
-<span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="n">team_scan</span><span class="p">(</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-<span class="p">};</span>
-</pre></div>
-</div>
-</section>
-<section id="public-class-members">
-<h2>Public Class Members<a class="headerlink" href="#public-class-members" title="Permalink to this heading">#</a></h2>
-<section id="nested-aliases">
-<h3>Nested aliases<a class="headerlink" href="#nested-aliases" title="Permalink to this heading">#</a></h3>
+<dl class="cppkokkos function">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConcept17TeamHandleConceptERK17TeamHandleConcept">
+<span id="_CPPv3N17TeamHandleConcept17TeamHandleConceptERK17TeamHandleConcept"></span><span id="_CPPv2N17TeamHandleConcept17TeamHandleConceptERK17TeamHandleConcept"></span><span id="TeamHandleConcept::TeamHandleConcept__TeamHandleConceptCR"></span><span class="sig-name descname"><span class="n"><span class="pre">TeamHandleConcept</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N17TeamHandleConcept17TeamHandleConceptERK17TeamHandleConcept" title="TeamHandleConcept::TeamHandleConcept"><span class="n"><span class="pre">TeamHandleConcept</span></span></a><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConcept17TeamHandleConceptERK17TeamHandleConcept" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Copy constructor.</p>
+</dd></dl>
+
+<dl class="cppkokkos function">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConceptD0Ev">
+<span id="_CPPv3N17TeamHandleConceptD0Ev"></span><span id="_CPPv2N17TeamHandleConceptD0Ev"></span><span id="TeamHandleConcept::~TeamHandleConcept"></span><span class="sig-name descname"><span class="n"><span class="pre">~TeamHandleConcept</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConceptD0Ev" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Destructor.</p>
+</dd></dl>
+
+<p class="rubric">Assignment</p>
+<dl class="cppkokkos function">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConceptaSERR17TeamHandleConcept">
+<span id="_CPPv3N17TeamHandleConceptaSERR17TeamHandleConcept"></span><span id="_CPPv2N17TeamHandleConceptaSERR17TeamHandleConcept"></span><span id="TeamHandleConcept::assign-operator__TeamHandleConceptRR"></span><a class="reference internal" href="#_CPPv417TeamHandleConcept" title="TeamHandleConcept"><span class="n"><span class="pre">TeamHandleConcept</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv417TeamHandleConcept" title="TeamHandleConcept"><span class="n"><span class="pre">TeamHandleConcept</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConceptaSERR17TeamHandleConcept" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Move assignment.</p>
+</dd></dl>
+
+<dl class="cppkokkos function">
+<dt class="sig sig-object cppkokkos" id="_CPPv4N17TeamHandleConceptaSERK17TeamHandleConcept">
+<span id="_CPPv3N17TeamHandleConceptaSERK17TeamHandleConcept"></span><span id="_CPPv2N17TeamHandleConceptaSERK17TeamHandleConcept"></span><span id="TeamHandleConcept::assign-operator__TeamHandleConceptCR"></span><a class="reference internal" href="#_CPPv417TeamHandleConcept" title="TeamHandleConcept"><span class="n"><span class="pre">TeamHandleConcept</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv417TeamHandleConcept" title="TeamHandleConcept"><span class="n"><span class="pre">TeamHandleConcept</span></span></a><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N17TeamHandleConceptaSERK17TeamHandleConcept" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Assignment operators. Returns: <code class="docutils literal notranslate"><span class="pre">*this</span></code>.</p>
+</dd></dl>
+
+<p class="rubric">Index Queries</p>
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept9team_rankEv">
+<span id="_CPPv3NK17TeamHandleConcept9team_rankEv"></span><span id="_CPPv2NK17TeamHandleConcept9team_rankEv"></span><span id="TeamHandleConcept::team_rankC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team_rank</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept9team_rankEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Returns: the index <code class="docutils literal notranslate"><span class="pre">i</span></code> of the calling thread within the team with <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;=</span> <span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">team_size()</span></code></p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept9team_sizeEv">
+<span id="_CPPv3NK17TeamHandleConcept9team_sizeEv"></span><span id="_CPPv2NK17TeamHandleConcept9team_sizeEv"></span><span id="TeamHandleConcept::team_sizeC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team_size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept9team_sizeEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Returns: the number of threads associated with the team.</p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept11league_rankEv">
+<span id="_CPPv3NK17TeamHandleConcept11league_rankEv"></span><span id="_CPPv2NK17TeamHandleConcept11league_rankEv"></span><span id="TeamHandleConcept::league_rankC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">league_rank</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept11league_rankEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Returns: the index <code class="docutils literal notranslate"><span class="pre">i</span></code> of the calling team within the league with <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;=</span> <span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">league_size()</span></code></p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept11league_sizeEv">
+<span id="_CPPv3NK17TeamHandleConcept11league_sizeEv"></span><span id="_CPPv2NK17TeamHandleConcept11league_sizeEv"></span><span id="TeamHandleConcept::league_sizeC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">league_size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept11league_sizeEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Returns: the number of teams/workitems launched in the kernel.</p>
+</dd></dl>
+
+<p class="rubric">Scratch Space Control</p>
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept10team_shmemEv">
+<span id="_CPPv3NK17TeamHandleConcept10team_shmemEv"></span><span id="_CPPv2NK17TeamHandleConcept10team_shmemEv"></span><span id="TeamHandleConcept::team_shmemC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N17TeamHandleConcept20scratch_memory_spaceE" title="TeamHandleConcept::scratch_memory_space"><span class="n"><span class="pre">scratch_memory_space</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">team_shmem</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept10team_shmemEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Equivalent to calling <code class="docutils literal notranslate"><span class="pre">team_scratch(0)</span></code>.</p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept12team_scratchEi">
+<span id="_CPPv3NK17TeamHandleConcept12team_scratchEi"></span><span id="_CPPv2NK17TeamHandleConcept12team_scratchEi"></span><span id="TeamHandleConcept::team_scratch__iC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N17TeamHandleConcept20scratch_memory_spaceE" title="TeamHandleConcept::scratch_memory_space"><span class="n"><span class="pre">scratch_memory_space</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">team_scratch</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept12team_scratchEi" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>This function returns a scratch memory handle shared by all threads in a team, which allows access to scratch memory.
+This handle can be given as the first argument to a <code class="docutils literal notranslate"><span class="pre">Kokkos::View</span></code> to make it use scratch memory.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">execution_space</span></code>: specifies the <a class="reference external" href="https://kokkos.github.io/kokkos-core-wiki/API/core/execution_spaces.html">execution space</a> associated to the team</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">scratch_memory_space</span></code>: the scratch memory space associated to this team’s execution space</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">level</span></code>: The level of requested scratch memory is either <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p>Returns: a scratch memory handle to the team shared scratch memory specified by level.</p></li>
 </ul>
-</section>
-<section id="constructors">
-<h3>Constructors<a class="headerlink" href="#constructors" title="Permalink to this heading">#</a></h3>
-<ul>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">TeamHandleConcept</span><span class="p">()</span>
-<span class="n">TeamHandleConcept</span><span class="p">(</span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">)</span>
-<span class="n">TeamHandleConcept</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span>
-<span class="o">~</span><span class="n">TeamHandleConcept</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Default, move and copy constructors as well as destructor.</p>
-</li>
-</ul>
-</section>
-<section id="assignment">
-<h3>Assignment<a class="headerlink" href="#assignment" title="Permalink to this heading">#</a></h3>
-<ul>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Move assignment.</p>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TeamHandleConcept</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Assignment operators.
-Returns: <code class="docutils literal notranslate"><span class="pre">*this</span></code>.</p>
-</li>
-</ul>
-</section>
-<section id="index-queries">
-<h3>Index Queries<a class="headerlink" href="#index-queries" title="Permalink to this heading">#</a></h3>
-<ul>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">team_size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>Returns: the number of threads associated with the team.</p>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">team_rank</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>Returns: the index <code class="docutils literal notranslate"><span class="pre">i</span></code> of the calling thread within the team with <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;=</span> <span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">team_size()</span></code></p>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">league_size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>Returns: the number of teams/workitems launched in the kernel.</p>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">league_rank</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>Returns: the index <code class="docutils literal notranslate"><span class="pre">i</span></code> of the calling team within the league with <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;=</span> <span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">league_size()</span></code></p>
-</li>
-</ul>
-</section>
-<section id="scratch-space-control">
-<h3>Scratch Space Control<a class="headerlink" href="#scratch-space-control" title="Permalink to this heading">#</a></h3>
-<ul>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">scratch_memory_space</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nf">team_scratch</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">level</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>This function returns a scratch memory handle shared by all threads in a team,
-which allows access to scratch memory. This handle can be given as the first
-argument to a <code class="docutils literal notranslate"><span class="pre">Kokkos::View</span></code> to make it use scratch memory.</p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept14thread_scratchEi">
+<span id="_CPPv3NK17TeamHandleConcept14thread_scratchEi"></span><span id="_CPPv2NK17TeamHandleConcept14thread_scratchEi"></span><span id="TeamHandleConcept::thread_scratch__iC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N17TeamHandleConcept20scratch_memory_spaceE" title="TeamHandleConcept::scratch_memory_space"><span class="n"><span class="pre">scratch_memory_space</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">thread_scratch</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept14thread_scratchEi" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>This function returns a scratch memory handle specific to the calling thread,
+which allows access to its private scratch memory. This handle can be given as the
+first argument to a <code class="docutils literal notranslate"><span class="pre">Kokkos::View</span></code> to make it use scratch memory.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">level</span></code>: The level of requested scratch memory is either <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>.
-Returns: a scratch memory handle to the team shared scratch memory specified by level.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">level</span></code>: The level of requested scratch memory is either <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p>Returns: a scratch memory handle to the thread scratch memory specified by level.</p></li>
 </ul>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">scratch_memory_space</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nf">thread_scratch</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">level</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>This function returns a scratch memory handle specific to the calling thread,
-which allows access to its private scratch memory.
-This handle can be given as the first argument to a <code class="docutils literal notranslate"><span class="pre">Kokkos::View</span></code> to make it use
-scratch memory.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">level</span></code>: The level of requested scratch memory is either <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>.
-Returns: a scratch memory handle to the thread scratch memory specified by level.</p></li>
-</ul>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">scratch_memory_space</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nf">team_shmem</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>Equivalent to calling <code class="docutils literal notranslate"><span class="pre">team_scratch(0)</span></code>.</p>
-</li>
-</ul>
-</section>
-<section id="team-collective-operations">
-<h3>Team Collective Operations<a class="headerlink" href="#team-collective-operations" title="Permalink to this heading">#</a></h3>
-<p>The following functions must be called collectively by all members of a team. These
-calls must be lexically the same call, i.e. it is not legal to have some members of a team
-call a collective in one branch and the others in another branch of the code (see example).</p>
-<ul>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">team_barrier</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>All members of the team wait at the barrier, until the whole team arrived. This also issues
-a memory fence.</p>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
-<span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">team_broadcast</span><span class="p">(</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">source_team_rank</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>After this call <code class="docutils literal notranslate"><span class="pre">var</span></code> contains for every member of the team the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> from the thread
-for which <code class="docutils literal notranslate"><span class="pre">team_rank()</span> <span class="pre">==</span> <span class="pre">source_team_rank</span></code>.</p>
+</dd></dl>
+
+<p class="rubric">Team Collective Operations</p>
+<p>The following functions must be called collectively by all members of a team.
+These calls must be lexically the same call, i.e. it is not legal to have some members of a team call
+a collective in one branch and the others in another branch of the code (see example).</p>
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4NK17TeamHandleConcept12team_barrierEv">
+<span id="_CPPv3NK17TeamHandleConcept12team_barrierEv"></span><span id="_CPPv2NK17TeamHandleConcept12team_barrierEv"></span><span id="TeamHandleConcept::team_barrierC"></span><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team_barrier</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4NK17TeamHandleConcept12team_barrierEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>All members of the team wait at the barrier, until the whole team arrived. This also issues a memory fence.</p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4I0ENK17TeamHandleConcept14team_broadcastEvR1TKi">
+<span id="_CPPv3I0ENK17TeamHandleConcept14team_broadcastER1TKi"></span><span id="_CPPv2I0ENK17TeamHandleConcept14team_broadcastER1TKi"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team_broadcast</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0ENK17TeamHandleConcept14team_broadcastEvR1TKi" title="TeamHandleConcept::team_broadcast::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">value</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_team_rank</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4I0ENK17TeamHandleConcept14team_broadcastEvR1TKi" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>After this call <code class="docutils literal notranslate"><span class="pre">var</span></code> contains for every member of the team the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> from the thread for which <code class="docutils literal notranslate"><span class="pre">team_rank()</span> <span class="pre">==</span> <span class="pre">source_team_rank</span></code>.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">var</span></code>: a variable of type <code class="docutils literal notranslate"><span class="pre">T</span></code> which gets overwritten by the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> from the source rank.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">source_team_rank</span></code>: identifies the broadcasting member of the team.</p></li>
 </ul>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Closure</span><span class="p">,</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
-<span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">team_broadcast</span><span class="p">(</span><span class="w"> </span><span class="n">Closure</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">source_team_rank</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>After this call <code class="docutils literal notranslate"><span class="pre">var</span></code> contains for every member of the team the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> from the thread
-for which <code class="docutils literal notranslate"><span class="pre">team_rank()</span> <span class="pre">==</span> <span class="pre">source_team_rank</span></code> after applying <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4I00ENK17TeamHandleConcept14team_broadcastEvRK7ClosureR1TKi">
+<span id="_CPPv3I00ENK17TeamHandleConcept14team_broadcastERK7ClosureR1TKi"></span><span id="_CPPv2I00ENK17TeamHandleConcept14team_broadcastERK7ClosureR1TKi"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Closure</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team_broadcast</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00ENK17TeamHandleConcept14team_broadcastEvRK7ClosureR1TKi" title="TeamHandleConcept::team_broadcast::Closure"><span class="n"><span class="pre">Closure</span></span></a><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">f</span></span>, <a class="reference internal" href="#_CPPv4I00ENK17TeamHandleConcept14team_broadcastEvRK7ClosureR1TKi" title="TeamHandleConcept::team_broadcast::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">value</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_team_rank</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4I00ENK17TeamHandleConcept14team_broadcastEvRK7ClosureR1TKi" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>After this call <code class="docutils literal notranslate"><span class="pre">var</span></code> contains for every member of the team the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> from the thread for which <code class="docutils literal notranslate"><span class="pre">team_rank()</span> <span class="pre">==</span> <span class="pre">source_team_rank</span></code> after applying <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">f</span></code>: a function object with an <code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">operator()</span> <span class="pre">(</span> <span class="pre">T</span> <span class="pre">&amp;</span> <span class="pre">)</span></code> which is applied to <code class="docutils literal notranslate"><span class="pre">var</span></code> before broadcasting it.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">var</span></code>: a variable of type <code class="docutils literal notranslate"><span class="pre">T</span></code> which gets overwritten by the value of <code class="docutils literal notranslate"><span class="pre">f(var)</span></code> from the source rank.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">source_team_rank</span></code>: identifies the broadcasting member of the team.</p></li>
 </ul>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ReducerType</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span>
-<span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">team_reduce</span><span class="p">(</span><span class="w"> </span><span class="n">ReducerType</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">reducer</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>Performs a reduction accross all members of the team as specified by <code class="docutils literal notranslate"><span class="pre">reducer</span></code>.
-<code class="docutils literal notranslate"><span class="pre">ReducerType</span></code> must meet the concept of <code class="docutils literal notranslate"><span class="pre">Kokkos::Reducer</span></code>.</p>
-</li>
-<li><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">T</span><span class="w"> </span><span class="o">&gt;</span>
-<span class="kr">inline</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">team_scan</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="n">cosnt</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>Performs an exclusive scan over the <code class="docutils literal notranslate"><span class="pre">var</span></code> provided by the team members.
-Let <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">team_rank()</span></code> and <code class="docutils literal notranslate"><span class="pre">VALUES[t]</span></code> the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> from thread <code class="docutils literal notranslate"><span class="pre">t</span></code>.
-Returns: <code class="docutils literal notranslate"><span class="pre">VALUES[0]</span> <span class="pre">+</span> <span class="pre">VALUES[1]</span> <span class="pre">+</span> </code>…<code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">VALUES[t-1]</span></code> or zero for <code class="docutils literal notranslate"><span class="pre">t==0</span></code>.</p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4I0ENK17TeamHandleConcept11team_reduceEvRK11ReducerType">
+<span id="_CPPv3I0ENK17TeamHandleConcept11team_reduceERK11ReducerType"></span><span id="_CPPv2I0ENK17TeamHandleConcept11team_reduceERK11ReducerType"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ReducerType</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team_reduce</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0ENK17TeamHandleConcept11team_reduceEvRK11ReducerType" title="TeamHandleConcept::team_reduce::ReducerType"><span class="n"><span class="pre">ReducerType</span></span></a><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">reducer</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4I0ENK17TeamHandleConcept11team_reduceEvRK11ReducerType" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Performs a reduction accross all members of the team as specified by <code class="docutils literal notranslate"><span class="pre">reducer</span></code>. <code class="docutils literal notranslate"><span class="pre">ReducerType</span></code> must meet the concept of <code class="docutils literal notranslate"><span class="pre">Kokkos::Reducer</span></code>.</p>
+</dd></dl>
+
+<dl class="cppkokkos kokkosinlinefunction">
+<dt class="sig sig-object cppkokkos" id="_CPPv4I0ENK17TeamHandleConcept9team_scanE1TRK1TPC1T">
+<span id="_CPPv3I0ENK17TeamHandleConcept9team_scanERK1TPC1T"></span><span id="_CPPv2I0ENK17TeamHandleConcept9team_scanERK1TPC1T"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="k"><span class="pre">KOKKOS_INLINE_FUNCTION</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0ENK17TeamHandleConcept9team_scanE1TRK1TPC1T" title="TeamHandleConcept::team_scan::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team_scan</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0ENK17TeamHandleConcept9team_scanE1TRK1TPC1T" title="TeamHandleConcept::team_scan::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">value</span></span>, <a class="reference internal" href="#_CPPv4I0ENK17TeamHandleConcept9team_scanE1TRK1TPC1T" title="TeamHandleConcept::team_scan::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">global</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#_CPPv4I0ENK17TeamHandleConcept9team_scanE1TRK1TPC1T" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Performs an exclusive scan over the <code class="docutils literal notranslate"><span class="pre">var</span></code> provided by the team members. Let <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">team_rank()</span></code> and <code class="docutils literal notranslate"><span class="pre">VALUES[t]</span></code> the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> from thread <code class="docutils literal notranslate"><span class="pre">t</span></code>.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">global</span></code> if provided will be set to <code class="docutils literal notranslate"><span class="pre">VALUES[0]</span> <span class="pre">+</span> <span class="pre">VALUES[1]</span> <span class="pre">+</span> </code>…<code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">VALUES[team_size()-1]</span></code>, must be the same
-pointer for every team member.</p></li>
+<li><p>Returns: <code class="docutils literal notranslate"><span class="pre">VALUES[0]</span></code> + <code class="docutils literal notranslate"><span class="pre">VALUES[1]</span></code> + <code class="docutils literal notranslate"><span class="pre">...</span></code> + <code class="docutils literal notranslate"><span class="pre">VALUES[t-1]</span></code> or zero for <code class="docutils literal notranslate"><span class="pre">t==0</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">global</span></code> if provided will be set to <code class="docutils literal notranslate"><span class="pre">VALUES[0]</span></code> + <code class="docutils literal notranslate"><span class="pre">VALUES[1]</span></code> + <code class="docutils literal notranslate"><span class="pre">...</span></code> + <code class="docutils literal notranslate"><span class="pre">VALUES[team_size()-1]</span></code>,
+must be the same pointer for every team member.</p></li>
 </ul>
-</li>
-</ul>
-</section>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span><span class="w"> </span><span class="n">TeamPolciy</span><span class="o">&lt;</span><span class="p">...</span><span class="o">&gt;</span><span class="w"> </span><span class="n">policy_type</span><span class="p">;</span>
-<span class="n">parallel_for</span><span class="p">(</span><span class="n">policy_type</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">TEAM_SIZE</span><span class="p">).</span><span class="n">set_scratch_size</span><span class="p">(</span><span class="n">PerTeam</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4096</span><span class="p">)),</span><span class="w"> </span>
-<span class="w">             </span><span class="n">KOKKOS_LAMBDA</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">policy_type</span><span class="o">::</span><span class="n">member_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">team_handle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span><span class="w"> </span><span class="n">TeamPolciy</span><span class="o">&lt;</span><span class="p">...</span><span class="o">&gt;</span><span class="w"> </span><span class="n">policy_type</span><span class="p">;</span>
+<span class="n">parallel_for</span><span class="p">(</span><span class="n">policy_type</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">TEAM_SIZE</span><span class="p">).</span><span class="n">set_scratch_size</span><span class="p">(</span><span class="n">PerTeam</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4096</span><span class="p">)),</span>
+<span class="w">            </span><span class="n">KOKKOS_LAMBDA</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">policy_type</span><span class="o">::</span><span class="n">member_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">team_handle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_size</span><span class="p">();</span><span class="w"> </span><span class="c1">// returns TEAM_SIZE</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">tid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_rank</span><span class="p">();</span><span class="w"> </span><span class="c1">// returns a number between 0 and TEAM_SIZE</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">team_handle</span><span class="p">.</span><span class="n">league_size</span><span class="p">();</span><span class="w"> </span><span class="c1">// returns N</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">lid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">team_handle</span><span class="p">.</span><span class="n">league_rank</span><span class="p">();</span><span class="w"> </span><span class="c1">// returns a number between 0 and N</span>
 
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tid</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
-<span class="w">    </span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_broadcast</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w"> </span>
+<span class="w">    </span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_broadcast</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// value==15 on every thread</span>
 <span class="w">    </span><span class="n">value</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">tid</span><span class="p">;</span>
-<span class="w">    </span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_broadcast</span><span class="p">([</span><span class="o">&amp;</span><span class="p">]</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">var</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">var</span><span class="o">*=</span><span class="mi">2</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"> </span>
+<span class="w">    </span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_broadcast</span><span class="p">([</span><span class="o">&amp;</span><span class="p">]</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">var</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">var</span><span class="o">*=</span><span class="mi">2</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// value==34 on every thread</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">global</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">global</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">scan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_scan</span><span class="p">(</span><span class="n">tid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// scan == tid*(tid+1)/2 on every thread</span>
 <span class="w">    </span><span class="c1">// global == ts*(ts-1)/2 on every thread</span>
-<span class="w">    </span><span class="n">Kokkos</span><span class="o">::</span><span class="n">View</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">policy_type</span><span class="o">::</span><span class="n">execution_space</span><span class="o">::</span><span class="n">scratch_memory_type</span><span class="o">&gt;</span><span class="w"> </span>
-<span class="w">      </span><span class="n">a</span><span class="p">(</span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_scratch</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="mi">1024</span><span class="p">);</span><span class="w"> </span>
-<span class="w">    </span>
+<span class="w">    </span><span class="n">Kokkos</span><span class="o">::</span><span class="n">View</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">policy_type</span><span class="o">::</span><span class="n">execution_space</span><span class="o">::</span><span class="n">scratch_memory_type</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">a</span><span class="p">(</span><span class="n">team_handle</span><span class="p">.</span><span class="n">team_scratch</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="mi">1024</span><span class="p">);</span>
+
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -791,16 +783,7 @@ pointer for every team member.</p></li>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">TeamHandleConcept</span></code></a><ul>
-<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
-<li><a class="reference internal" href="#public-class-members">Public Class Members</a><ul>
-<li><a class="reference internal" href="#nested-aliases">Nested aliases</a></li>
-<li><a class="reference internal" href="#constructors">Constructors</a></li>
-<li><a class="reference internal" href="#assignment">Assignment</a></li>
-<li><a class="reference internal" href="#index-queries">Index Queries</a></li>
-<li><a class="reference internal" href="#scratch-space-control">Scratch Space Control</a></li>
-<li><a class="reference internal" href="#team-collective-operations">Team Collective Operations</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
@@ -821,5 +804,6 @@ pointer for every team member.</p></li>
     <script src="../../../_static/scripts/furo.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     </body>
 </html>
